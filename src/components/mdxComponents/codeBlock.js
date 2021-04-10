@@ -30,8 +30,7 @@ const CodeBlock = ({ children: exampleCode, ...props }) => {
     return <LoadableComponent code={exampleCode} />;
   } else {
     return (
-      <Highlight {...defaultProps} code={exampleCode} language="jsx">
-      </Highlight>
+      <div></div>
     );
   }
 };
